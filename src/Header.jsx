@@ -1,15 +1,17 @@
 function Header(){
     return(
         <header>
-            <nav>
+        <div class="header-container">
             <h1>Nino Cezar</h1>
-                <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Services</a></li>
-                    <li><a href='#'>Contact</a></li>
+                <nav>
+                 <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>
+                </nav>
+        </div>
             <hr></hr>
         </header>
     );
