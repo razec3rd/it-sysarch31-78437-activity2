@@ -8,20 +8,21 @@ import profilePic5 from './assets/profile5.png'
 function List(){
 
     const students = [
-    {name: "Gojo", email: "Gojo@jujutsu.com", photo: profilePic1},
-    {name: "Gojo", email: "Gojo@jujutsu.com", photo: profilePic2},
-    {name: "Nobara", email: "Nobara@jujutsu.com", photo: profilePic3},
-    {name: "Yuji", email: "Yuji@jujutsu.com", photo: profilePic4},
-    {name: "Nanami", email: "Nanami@jujutsu.com", photo: profilePic5}
+    {key:1, name: "Gojo", email: "Gojo@jujutsu.com", photo: profilePic1},
+    {key:2,name: "Gojo", email: "Gojo@jujutsu.com", photo: profilePic2},
+    {key:3,name: "Nobara", email: "Nobara@jujutsu.com", photo: profilePic3},
+    {key:4,name: "Yuji", email: "Yuji@jujutsu.com", photo: profilePic4},
+    {key:5,name: "Nanami", email: "Nanami@jujutsu.com", photo: profilePic5}
     ];
 
 
     
     return (<>
-    {Object.keys(students).map((stud) => {
-        const student = students[stud];
+    {Object.keys(students).map((key) => {
+        const student = students[key];
         return(
             <Student
+            key={key}
             studName = {student.name}
             studEmail = {student.email}
             profilePic = {student.photo}/>
